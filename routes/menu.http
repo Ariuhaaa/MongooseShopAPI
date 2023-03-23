@@ -1,0 +1,28 @@
+###
+GET http://localhost:8000/api/menu
+
+
+###
+POST http://localhost:8000/api/menu
+Content-Type: application/json
+
+{
+  "menuName": "hat",
+  "link":,
+  "position":,
+}
+
+
+###
+PUT http://localhost:8000/api/menu/6418e3916b784fa8bfcb61ab
+Content-Type: application/json
+
+{
+  "menuName": "boots",
+  "link":,
+  "position":,
+}
+
+
+###
+DELETE http://localhost:8000/api/menu/64192bfca860581011a43252

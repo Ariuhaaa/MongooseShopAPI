@@ -1,0 +1,33 @@
+###
+GET http://localhost:8000/api/product
+
+
+###
+POST http://localhost:8000/api/product
+Content-Type: application/json
+
+{
+  "productName": "shoes",
+  "price":2345,
+  "salePercent": 34,
+  "quantity":354 ,
+  "description": "rfdghnbfd",
+
+}
+
+
+###
+PUT http://localhost:8000/api/product/6418e3916b784fa8bfcb61ab
+Content-Type: application/json
+
+{
+  "productName": "bag",
+   "price":2345,
+  "salePercent": 34,
+  "quantity":354 ,
+  "description": "rfdghnbfd",
+}
+
+
+###
+DELETE http://localhost:8000/api/product/64192bfca860581011a43252
