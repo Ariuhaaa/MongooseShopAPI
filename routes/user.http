@@ -3,9 +3,11 @@
 POST http://localhost:8000/api/user
 Content-Type: application/json
 
+
 {
-  "email":"ariunaa@gmail.com",
-  "password":"Arinaa"
+  "email":"cfdsvfv@gmail.com",
+  "password":"Ariuuunaa",
+  "username" : "kfuhdsj"
 }
 
 ###
@@ -13,18 +15,18 @@ Content-Type: application/json
 POST http://localhost:8000/api/user/login
 Content-Type: application/json
 
+
 {
-  "email":"ariunaa@gmail.com",
-  "password":"Arinaa"
+  "email":"1123@gmail.com",
+  "password":"Ariuuunaa"
 }
 
 
 
 
 ###
-GET http://localhost:8000/api/user?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Il9pZCI6IjY0MWJiMzA4MWVkMWE0ZGE1YTRjOTgyZiIsInBhc3N3b3JkIjoiJDJiJDEwJDF3Z2dEOFNlSy8xbW5lWlV3d3R2Q09MWHc0V3NYclhXcVVOWXJUWmFNTWs0dVZVandkL3FXIiwiZW1haWwiOiJPeXVrYUBnbWFpbC5jb20iLCJfX3YiOjB9LCJpYXQiOjE2Nzk1MzY5NjksImV4cCI6MTY3OTU0NDE2OX0.6res6CzbNlqFCuErLNnu40OPNXr4E5L1qcbh_Mp-_Qo
-
-
+GET http://localhost:8000/api/user
+x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Il9pZCI6IjY0MWQxMjFjMGUwYWI4YmM5MDA3Yjg1ZiIsInVzZXJuYW1lIjoiaGkiLCJwYXNzd29yZCI6IiQyYiQxMCRpdjhScFRsODBsLk5rY1RHZWRHVHB1aXF4d1hTWDdDWWZVY21VLks5QUoyZVRYSUVDbnEwaSIsImVtYWlsIjoiMTEyM0BnbWFpbC5jb20iLCJfX3YiOjB9LCJpYXQiOjE2Nzk2MjY3OTgsImV4cCI6MTY3OTYzMzk5OH0.gjPkDVGcDOefq_nJBCUI8DsDJhpOPoHvvok6cDZuzM0
 
 
 

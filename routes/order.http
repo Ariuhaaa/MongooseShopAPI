@@ -1,0 +1,35 @@
+###
+GET http://localhost:8000/api/order
+x-access-token:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Il9pZCI6IjY0MWQxMjFjMGUwYWI4YmM5MDA3Yjg1ZiIsInVzZXJuYW1lIjoiaGkiLCJwYXNzd29yZCI6IiQyYiQxMCRpdjhScFRsODBsLk5rY1RHZWRHVHB1aXF4d1hTWDdDWWZVY21VLks5QUoyZVRYSUVDbnEwaSIsImVtYWlsIjoiMTEyM0BnbWFpbC5jb20iLCJfX3YiOjB9LCJpYXQiOjE2Nzk2MjY3OTgsImV4cCI6MTY3OTYzMzk5OH0.gjPkDVGcDOefq_nJBCUI8DsDJhpOPoHvvok6cDZuzM0
+
+
+###
+POST http://localhost:8000/api/order
+Content-Type: application/json
+x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Il9pZCI6IjY0MWQxMjFjMGUwYWI4YmM5MDA3Yjg1ZiIsInVzZXJuYW1lIjoiaGkiLCJwYXNzd29yZCI6IiQyYiQxMCRpdjhScFRsODBsLk5rY1RHZWRHVHB1aXF4d1hTWDdDWWZVY21VLks5QUoyZVRYSUVDbnEwaSIsImVtYWlsIjoiMTEyM0BnbWFpbC5jb20iLCJfX3YiOjB9LCJpYXQiOjE2Nzk2MjY3OTgsImV4cCI6MTY3OTYzMzk5OH0.gjPkDVGcDOefq_nJBCUI8DsDJhpOPoHvvok6cDZuzM0
+
+{
+  "orderDetail": [{"productId":"23456fbgn", "amount":4466, "currentPrice":435}],
+  "userId":"dfvc",
+  "price":765,
+  "orderStatus":"Shipping"
+
+}
+
+
+###
+PUT http://localhost:8000/api/order/6418e3916b784fa8bfcb61ab
+Content-Type: application/json
+x-access-token:
+
+{
+  "Order": "",
+  "OrderId":""
+
+
+}
+
+
+###
+DELETE http://localhost:8000/api/order/64192bfca860581011a43252
+x-access-token:

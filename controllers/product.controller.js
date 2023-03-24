@@ -3,7 +3,7 @@ const Product = require("../models/product.model");
 exports.getAll = async (req, res) => {
   try {
     console.log("test");
-    const result = await Product.find({});
+    const result = await Product.find({}).populate("categoryId");
     res.json({ status: true, result });
   } catch (err) {
     res.json({ status: false, message: err });

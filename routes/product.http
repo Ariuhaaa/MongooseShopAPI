@@ -1,24 +1,27 @@
 ###
 GET http://localhost:8000/api/product
+x-access-token:
+
 
 
 ###
 POST http://localhost:8000/api/product
 Content-Type: application/json
+x-access-token:
 
 {
   "productName": "shoes",
   "price":2345,
   "salePercent": 34,
   "quantity":354 ,
-  "description": "rfdghnbfd",
-
+  "description": "rfdghnbfd"
 }
 
 
 ###
 PUT http://localhost:8000/api/product/6418e3916b784fa8bfcb61ab
 Content-Type: application/json
+x-access-token:
 
 {
   "productName": "bag",
@@ -31,3 +34,4 @@ Content-Type: application/json
 
 ###
 DELETE http://localhost:8000/api/product/64192bfca860581011a43252
+x-access-token:

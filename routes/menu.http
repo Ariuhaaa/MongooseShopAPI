@@ -1,28 +1,34 @@
 ###
 GET http://localhost:8000/api/menu
+x-access-token:
 
 
 ###
 POST http://localhost:8000/api/menu
 Content-Type: application/json
+x-access-token:
 
 {
   "menuName": "hat",
-  "link":,
-  "position":,
+  "link": "j",
+  "position":"j"
 }
 
 
 ###
-PUT http://localhost:8000/api/menu/6418e3916b784fa8bfcb61ab
+PUT http://localhost:8000/api/menu
 Content-Type: application/json
+x-access-token:
+
 
 {
   "menuName": "boots",
   "link":,
   "position":,
+  ""
 }
 
 
 ###
 DELETE http://localhost:8000/api/menu/64192bfca860581011a43252
+x-access-token:

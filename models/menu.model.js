@@ -4,7 +4,6 @@ const menuSchema = new mongoose.Schema(
   {
     menuName: {
       type: String,
-      unique: true,
     },
     link: String,
     position: String,

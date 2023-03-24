@@ -1,21 +1,20 @@
-const { default: mongoose } = require("mongoose");
+const { default: mongoose, Schema } = require("mongoose");
 
 const productSchema = new mongoose.Schema(
   {
     // id:
-    // categoryId:
+    categoryId: { type: Schema.Types.ObjectId, ref: "" },
     productName: {
       type: String,
-      unique: true,
     },
     price: Number,
     salePercent: Number,
-    quantity: Number,
+    quantityInStock: Number,
     description: String,
-    image: Buffer,
-    thumbImage: Buffer,
+    image: [String],
+    thumbImage: String,
   },
-  { collection: "product" }
+  { collection: "product", timestamps: true }
 );
 
 const Product = mongoose.model("Product", productSchema);
